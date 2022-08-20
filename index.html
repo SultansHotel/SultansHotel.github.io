@@ -7,16 +7,54 @@
 </head>
 <body>
     <header>
-        <h2 class="item">Istanbul Airport</h2>
-        <h2 class="item">Sabiha Gokcen Airport</h2>
+        <h2 id="istanbul" class="item">Istanbul Airport</h2>
+        <h2 id="sabiha" class="item">Sabiha Gokcen Airport</h2>
     </header>
 
     <section>
+        <div class="container">
+            <div id="istanbulDesc" >
+                <h3>There is an "airport bus" called "havaist".</h3> 
 
+                Here is their official website:
+                https://hava.ist/en/Home/Index
+                https://hava.ist/en/Page/FrequentlyAsked
+                
+                The steps for getting from the airport to Sultans Hotel:
+                1)
+                Take HVIST-12 to Beyazit Square
+                ( HVIST-12 vehicle departs from on the -2 floors of the arrival passenger boarding platforms at Istanbul Airport. )
+                2)
+                Here is the google map showing you how to get from Beyazit Square to Sultans Hotel:
+                https://goo.gl/maps/LEteW3QwUchQF1wm7  
+            </div>
+
+            <p id="sabihaDesc">
+                There is an airport bus called "havabus". 
+
+                This is their official website:
+                https://www.sabihagokcen.aero/passengers-and-visitors/transport-and-parking/transportation/havabus-en
+                
+                On their website, they stated that "the shuttles are white and parked in front of the exit from the arrivals level to the terminal building, ready to take you to Taksim for a fee of 52.50 TL."
+                
+                After you go from Sabiha Gokcen Airport to "taksim", you will need to go to Sultanahmet. This is how:
+                https://www.rome2rio.com/s/Taksim/Sultanahmet#:~:text=The%20quickest%20way%20to%20get,daily%2C%20and%20operate%20every%20day.
+            </p>            
+        </div>
     </section>
     
     <footer>
 
     </footer>
+
+    <script>
+        let istanbul = document.querySelector("#istanbul").addEventListener("click", (e)=>{
+            e.preventDefault()
+        })
+
+        let sabiha = document.querySelector("#sabiha").addEventListener("click", (e)=>{
+            e.preventDefault()
+        })    
+    </script>
 </body>
 </html>

@@ -12,6 +12,14 @@ body {
     font-weight: bold;
 }
 
-h1{
+h2{
     background-color: green;
+}
+
+header {
+    display: flex;
+}
+
+header .item {
+    flex: 1;
 }

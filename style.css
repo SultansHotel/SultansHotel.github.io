@@ -12,9 +12,7 @@ body {
     font-weight: bold;
 }
 
-h2{
-    background-color: green;
-}
+/*****************************************/
 
 header {
     display: flex;
@@ -24,4 +22,6 @@ header {
 
 header .item {
     flex: 1;
+
+    border: 1px solid gray;
 }

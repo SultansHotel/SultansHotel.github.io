@@ -23,14 +23,13 @@ header {
     /* align-items: baseline; */
 }
 
+/* } header h3 { */
 header .item {
     flex: 1;
 
     border: 1px solid gray;
     text-align: center;
-/* }
 
-header h3 { */
     cursor: pointer;
     user-select: none;
 

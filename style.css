@@ -53,13 +53,15 @@ section  {
 /***************************************/
 div.container {
     /* outline: 5px solid pink; */
-    /* background-color: rgba(90, 155, 155,.8); */
-
+    background-color: rgba(90, 155, 155,.8);
+    /* background-color: rgba( 126, 185, 191, .8 ); */
     width: 90%;
     /* outline: 2px solid green;  */
 
     margin: 1em auto;
     display: flex;
+
+    /* color: #013A40; */
 }
 
 .official-website {
@@ -75,6 +77,8 @@ div.container {
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 2em; 
+
+    font-weight: bolder;
 }
 
 div.container h4 {

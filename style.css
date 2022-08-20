@@ -25,3 +25,7 @@ header .item {
 
     border: 1px solid gray;
 }
+
+section {
+    background-image: url("istanbul.jpeg");
+}

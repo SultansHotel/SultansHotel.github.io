@@ -14,9 +14,9 @@
 
     <section>
         <div class="container">
-            <div id="neighborhoodVideo" style="margin: 0 auto; outline: 5px solid #74A7AA;">
+            <!-- <div id="neighborhoodVideo" style="margin: 0 auto; outline: 5px solid #74A7AA;">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7_pzUEFERe8" title="Sultans Hotel Neighborhood" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-            </div>
+            </div> -->
 
             <div id="istanbulDesc" >
                 <h4 class="heading" style="padding-top: 1em;">
@@ -146,21 +146,24 @@
        
         istanbulBtn.addEventListener("click", (e)=>{
            
-            neighborhoodVideoContainer.style.display = "none"
+            if(neighborhoodVideoContainer)
+                neighborhoodVideoContainer.style.display = "none"
             privateShuttleDesc.style.display = "none";
             sabihaDesc.style.display = "none";
             istanbulDesc.style.display = "block";
         })
 
         sabihaBtn.addEventListener("click", (e)=>{
-            neighborhoodVideoContainer.style.display = "none" 
+            if(neighborhoodVideoContainer)
+                neighborhoodVideoContainer.style.display = "none"
             privateShuttleDesc.style.display = "none";
             istanbulDesc.style.display = "none";
             sabihaDesc.style.display = "block";
         })   
 
         privateShuttleBtn.addEventListener("click", (e)=>{
-            neighborhoodVideoContainer.style.display = "none" 
+            if(neighborhoodVideoContainer)
+                neighborhoodVideoContainer.style.display = "none"
             istanbulDesc.style.display = "none";
             sabihaDesc.style.display = "none";
             privateShuttleDesc.style.display = "block";

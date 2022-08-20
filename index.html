@@ -7,9 +7,9 @@
 </head>
 <body>
     <header>
-        <h3 id="istanbul" class="item">Istanbul Airport</h3>
-        <h3 id="sabiha" class="item">Sabiha Gokcen Airport</h3>
-        <h3 id="privateShuttle" class="item">Private Shuttle</h3>
+        <h3 id="istanbulBtn" class="item">Istanbul Airport</h3>
+        <h3 id="sabihaBtn" class="item">Sabiha Gokcen Airport</h3>
+        <h3 id="privateShuttleBtn" class="item">Private Shuttle</h3>
     </header>
 
     <section>
@@ -33,43 +33,131 @@
                 </div>
                 <br />
 
-                <p>
-                How to get from the airport to Sultans Hotel:
-                1)
-                Take HVIST-12 to Beyazit Square
-                ( HVIST-12 vehicle departs from on the -2 floors of the arrival passenger boarding platforms at Istanbul Airport. )
-                2)
-                Here is the google map showing you how to get from Beyazit Square to Sultans Hotel:
-                <a href="https://goo.gl/maps/LEteW3QwUchQF1wm7" target="_blank" rel="noopener noreferrer">Google Maps</a>
-                </p>
+                <div class="steps">
+                    <div>Steps to get to <span style="color: white;">Sultans Hotel:</span></div>
+                    <ol>
+                        <li>
+                    Take HVIST-12 <q>Beyazit Square</q> <br />
+                    ( HVIST-12 vehicle departs from on the -2 floors of the arrival passenger boarding platforms at <span style="color: white;">Istanbul Airport</span> )
+                        </li>
+                    <li>
+                    To get from <q>Beyazit Square</q> to <span style="color: white;">Sultans Hotel</span>, see this map: <br />
+                    <a href="https://goo.gl/maps/LEteW3QwUchQF1wm7" target="_blank" rel="noopener noreferrer">Google Maps</a>
+                    </li>
+                </div>
             </div>
 
-            <p id="sabihaDesc">
-                There is an airport bus called "havabus". 
+            <div id="sabihaDesc" >
+                <h4 style="padding-top: 1em;">
+                    <span style="color: white;">Sabiha Gokcen Airport</span> Budget Friendly "Havabus"
+                </h4> 
+                <br />
+                <div class="official-website">
+                    <div>Official website:</div>
+                    <ul>
+                        <li>
+                            <a href="https://www.sabihagokcen.aero/passengers-and-visitors/transport-and-parking/transportation/havabus-en">Havabus</a>
+                        </li>
+                    </ul>        
+                </div>
+                <br />
 
-                This is their official website:
-                https://www.sabihagokcen.aero/passengers-and-visitors/transport-and-parking/transportation/havabus-en
-                
-                On their website, they stated that "the shuttles are white and parked in front of the exit from the arrivals level to the terminal building, ready to take you to Taksim for a fee of 52.50 TL."
-                
-                After you go from Sabiha Gokcen Airport to "taksim", you will need to go to Sultanahmet. This is how:
-                https://www.rome2rio.com/s/Taksim/Sultanahmet#:~:text=The%20quickest%20way%20to%20get,daily%2C%20and%20operate%20every%20day.
-            </p>            
+                <div class="steps">
+                    <div>Steps to get to <span style="color: white;">Sultans Hotel:</span></div>
+                    <ol>
+                        <li>
+                            "The shuttles are white and parked in front of the exit from the arrivals level to the terminal building, ready to take you to <q>Taksim</q> for a fee around 50 TL."
+                        </li>
+
+                        <li>
+                             To get from <q>Taksim</q> to <q>Sultanahmet</q>: <br /> 
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.rome2rio.com/s/Taksim/Sultanahmet#:~:text=The%20quickest%20way%20to%20get,daily%2C%20and%20operate%20every%20day.">instructions</a>
+                        </li>
+
+                        <li>
+                            This is our address:
+                            <address><span style="color: white;">Sultans Hotel,</span> Küçük Ayasofya Mahallesi, Kadırga Meydanı Sk. No:17, 34122 Fatih/İstanbul</address>
+                        </li>
+                    </ol>    
+                </div>
+            </div>            
+
+            <div id="privateShuttleDesc" >
+                <h4 style="padding-top: 1em;">
+                    <span style="color: white;">Private Shuttle Service</span>
+                </h4> 
+                <br />
+
+                <div class="steps">
+                    <div>If you prefer this option, it costs between 43 euro to 53 euro (depending on the airport and the number of passengers).
+                        <br /> <br />When you get a chance, please share the following info with me at least 2 days before your arrival date.
+                        ( Email: info@sultanshotel.com )
+                    </div>
+                    <br/>
+
+                    <ol>
+                        <li>
+                            Your reservation number:
+                        </li>
+
+                        <li>
+                            All Passanger names:
+                        </li>
+
+                        <li>
+                            Passport numbers and nationalities:
+                        </li>
+
+                        <li>
+                            Landing time:  
+                        </li>
+
+                        <li>
+                            Flight number:  
+                        </li>
+
+                        <li>
+                            Airport name:  
+                        </li>
+                    </ol>    
+                </div>
+
+            </div> 
         </div>
     </section>
-    
-    <footer>
-
-    </footer>
+   
 
     <script>
-        let istanbul = document.querySelector("#istanbul").addEventListener("click", (e)=>{
-            e.preventDefault()
+        let istanbulBtn = document.querySelector("#istanbulBtn")
+        let sabihaBtn = document.querySelector("#sabihaBtn")
+        let privateShuttleBtn = document.querySelector("#privateShuttleBtn")
+
+        let istanbulDesc = document.querySelector("#istanbulDesc")
+        let sabihaDesc = document.querySelector("#sabihaDesc")
+        let privateShuttleDesc = document.querySelector("#privateShuttleDesc")
+       
+       
+       
+        istanbulBtn.addEventListener("click", (e)=>{
+           
+            privateShuttleDesc.style.display = "none";
+            sabihaDesc.style.display = "none";
+            istanbulDesc.style.display = "block";
         })
 
-        let sabiha = document.querySelector("#sabiha").addEventListener("click", (e)=>{
-            e.preventDefault()
-        })    
+        sabihaBtn.addEventListener("click", (e)=>{
+            
+            privateShuttleDesc.style.display = "none";
+            istanbulDesc.style.display = "none";
+            sabihaDesc.style.display = "block";
+        })   
+
+        privateShuttleBtn.addEventListener("click", (e)=>{
+          
+            istanbulDesc.style.display = "none";
+            sabihaDesc.style.display = "none";
+            privateShuttleDesc.style.display = "block";
+        })   
     </script>
 </body>
 </html>

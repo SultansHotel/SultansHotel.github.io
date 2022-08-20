@@ -7,13 +7,17 @@
 </head>
 <body>
     <header>
-        <h3 id="istanbulBtn" class="item">Istanbul Airport</h3>
-        <h3 id="sabihaBtn" class="item">Sabiha Gokcen Airport</h3>
-        <h3 id="privateShuttleBtn" class="item">Private Shuttle</h3>
+        <div id="istanbulBtn" class="item">Istanbul Airport</div>
+        <div id="sabihaBtn" class="item">Sabiha Gokcen Airport</div>
+        <div id="privateShuttleBtn" class="item">Private Shuttle</div>
     </header>
 
     <section>
         <div class="container">
+            <div id="neighborhoodVideo" style="margin: 0 auto; outline: 5px solid #74A7AA;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7_pzUEFERe8" title="Sultans Hotel Neighborhood" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+            </div>
+
             <div id="istanbulDesc" >
                 <h4 class="heading" style="padding-top: 1em;">
                     <span style="color: white;">Istanbul Airport</span> Budget Friendly "Havaist" Bus
@@ -124,12 +128,15 @@
             </div> 
         </div>
     </section>
+
+
    
 
     <script>
         let istanbulBtn = document.querySelector("#istanbulBtn")
         let sabihaBtn = document.querySelector("#sabihaBtn")
         let privateShuttleBtn = document.querySelector("#privateShuttleBtn")
+        let neighborhoodVideoContainer = document.querySelector("#neighborhoodVideo")
 
         let istanbulDesc = document.querySelector("#istanbulDesc")
         let sabihaDesc = document.querySelector("#sabihaDesc")
@@ -139,20 +146,21 @@
        
         istanbulBtn.addEventListener("click", (e)=>{
            
+            neighborhoodVideoContainer.style.display = "none"
             privateShuttleDesc.style.display = "none";
             sabihaDesc.style.display = "none";
             istanbulDesc.style.display = "block";
         })
 
         sabihaBtn.addEventListener("click", (e)=>{
-            
+            neighborhoodVideoContainer.style.display = "none" 
             privateShuttleDesc.style.display = "none";
             istanbulDesc.style.display = "none";
             sabihaDesc.style.display = "block";
         })   
 
         privateShuttleBtn.addEventListener("click", (e)=>{
-          
+            neighborhoodVideoContainer.style.display = "none" 
             istanbulDesc.style.display = "none";
             sabihaDesc.style.display = "none";
             privateShuttleDesc.style.display = "block";

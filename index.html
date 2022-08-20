@@ -14,9 +14,16 @@
 
     <section>
         <div class="container">
-            <!-- <div id="neighborhoodVideo" style="margin: 0 auto; outline: 5px solid #74A7AA;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7_pzUEFERe8" title="Sultans Hotel Neighborhood" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-            </div> -->
+            <div id="neighborhoodVideo" style="margin: 0 auto; ">
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/7_pzUEFERe8" title="Sultans Hotel Neighborhood" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe> -->
+                <!-- <p>
+                    Sultans Hotel is located in the historic Sultanahmet area. Please watch our 
+                    <a href="https://youtu.be/7_pzUEFERe8" target="_blank" rel="noopener noreferrer">neighborhood video.</a>
+                </p> -->
+                <a id="imageContainer" href="https://youtu.be/7_pzUEFERe8"  target="_blank" rel="noopener noreferrer">
+                    <img src="video_cover2.png" alt="sultans hotel neighborhood" style="object-fit: cover; width: 90%;" >
+                </a>
+            </div>
 
             <div id="istanbulDesc" >
                 <h4 class="heading" style="padding-top: 1em;">
@@ -74,7 +81,7 @@
                         </li>
 
                         <li>
-                             To get from <q>Taksim</q> to <q>Sultanahmet</q>: <br /> 
+                             To get from <q>Taksim</q> to <q>Sultanahmet</q>: 
                             <a target="_blank" rel="noopener noreferrer" href="https://www.rome2rio.com/s/Taksim/Sultanahmet#:~:text=The%20quickest%20way%20to%20get,daily%2C%20and%20operate%20every%20day.">instructions</a>
                         </li>
 
@@ -137,6 +144,7 @@
         let sabihaBtn = document.querySelector("#sabihaBtn")
         let privateShuttleBtn = document.querySelector("#privateShuttleBtn")
         let neighborhoodVideoContainer = document.querySelector("#neighborhoodVideo")
+        let divContainer = document.querySelector("div.container")
 
         let istanbulDesc = document.querySelector("#istanbulDesc")
         let sabihaDesc = document.querySelector("#sabihaDesc")
@@ -145,7 +153,8 @@
        
        
         istanbulBtn.addEventListener("click", (e)=>{
-           
+
+            divContainer.style["background-color"] = "rgba(90, 155, 155,.8)"
             if(neighborhoodVideoContainer)
                 neighborhoodVideoContainer.style.display = "none"
             privateShuttleDesc.style.display = "none";
@@ -154,6 +163,7 @@
         })
 
         sabihaBtn.addEventListener("click", (e)=>{
+            divContainer.style["background-color"] = "rgba(90, 155, 155,.8)"
             if(neighborhoodVideoContainer)
                 neighborhoodVideoContainer.style.display = "none"
             privateShuttleDesc.style.display = "none";
@@ -162,6 +172,7 @@
         })   
 
         privateShuttleBtn.addEventListener("click", (e)=>{
+            divContainer.style["background-color"] = "rgba(90, 155, 155,.8)"
             if(neighborhoodVideoContainer)
                 neighborhoodVideoContainer.style.display = "none"
             istanbulDesc.style.display = "none";

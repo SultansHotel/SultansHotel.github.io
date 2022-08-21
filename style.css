@@ -30,7 +30,7 @@ header {
 header .item {
     flex: 1;
 
-    border: 1px solid gray;
+    border-right: 1px solid #b6b6b6;
     text-align: center;
 
     cursor: pointer;
@@ -39,10 +39,15 @@ header .item {
     padding: 1em 0 1em 0;
 }
 
+header .item:first-child {
+    border-left: 1px solid #b6b6b6;
+}
+
 section  {
     width: 100%;
     height: 90%;
-    /* background-image: url("istanbul2.webp"); */
+    /* 
+    background-image: url("istanbul2.webp"); */
     background-repeat: no-repeat;
     background-size: cover;
     /* object-fit: cover; */

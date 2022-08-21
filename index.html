@@ -14,6 +14,7 @@
         </header>
 
         <section>
+            <!-- <img id="hero" alt="sultans hotel neighborhood" style="display: none;"> -->
             <div class="container">
                 <div id="neighborhoodVideo" style="margin: 0 auto; ">
                     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/7_pzUEFERe8" title="Sultans Hotel Neighborhood" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe> -->
@@ -152,6 +153,15 @@
         let istanbulDesc = document.querySelector("#istanbulDesc")
         let sabihaDesc = document.querySelector("#sabihaDesc")
         let privateShuttleDesc = document.querySelector("#privateShuttleDesc")
+
+        // let hero = document.querySelector("#hero")
+        let section = document.querySelector("section")
+        setTimeout( ()=>{
+            // hero.src="istanbul2.webp"
+            // hero.style.display = "inline"
+            // hero.style["z-index"] = 0
+            section.style["background-image"] = `url("istanbul2.webp")`
+        }, 5000)
        
        
        

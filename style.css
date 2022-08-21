@@ -50,6 +50,9 @@ section  {
 
     word-spacing: .1em;
     line-spacing: .1em;
+
+    border-left: 1px solid #b6b6b6;
+    border-right: 1px solid #b6b6b6;
 }
 
 #imageContainer {

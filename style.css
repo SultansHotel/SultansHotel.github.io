@@ -20,9 +20,10 @@ body {
 
 header {
     display: flex;
-
     /* justify-content: space-between; */
     /* align-items: baseline; */
+
+    background-color: #F3F2F7; 
 }
 
 /* } header h3 { */

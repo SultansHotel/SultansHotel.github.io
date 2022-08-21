@@ -70,7 +70,7 @@ section  {
 /***************************************/
 div.container {
     /* outline: 5px solid pink; */
-    /* background-color: rgba(90, 155, 155,.8); */
+    background-color: rgba(90, 155, 155,.8);
     
     width: 90%;
     /* outline: 2px solid green;  */
@@ -105,7 +105,7 @@ div.container h4 {
 }
 
 
-#istanbulDesc, #sabihaDesc, #privateShuttleDesc {
+#sabihaDesc, #privateShuttleDesc {
     display: none;
 }
 

@@ -16,16 +16,7 @@
         <section>
             <!-- <img id="hero" alt="sultans hotel neighborhood" style="display: none;"> -->
             <div class="container">
-                <div id="neighborhoodVideo" style="margin: 0 auto; ">
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/7_pzUEFERe8" title="Sultans Hotel Neighborhood" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe> -->
-                    <!--  <p>
-                        Sultans Hotel is located in the historic Sultanahmet area. Please watch our 
-                        <a href="https://youtu.be/7_pzUEFERe8" target="_blank" rel="noopener noreferrer">neighborhood video.</a>
-                    </p> -->
-                    <a id="imageContainer" href="https://youtu.be/7_pzUEFERe8"  target="_blank" rel="noopener noreferrer">
-                        <img src="video_cover2.png" alt="sultans hotel neighborhood" style="object-fit: cover; width: 90%;" >
-                    </a>
-                </div>
+
 
                 <div id="istanbulDesc" >
                     <h4 class="heading" style="padding-top: 1em;">
@@ -135,6 +126,19 @@
                     </div>
 
                 </div> 
+
+
+            </div>
+
+            <div id="neighborhoodVideo" style="margin: 0 auto; ">
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/7_pzUEFERe8" title="Sultans Hotel Neighborhood" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe> -->
+                <!--  <p>
+                    Sultans Hotel is located in the historic Sultanahmet area. Please watch our 
+                    <a href="https://youtu.be/7_pzUEFERe8" target="_blank" rel="noopener noreferrer">neighborhood video.</a>
+                </p> -->
+                <a id="imageContainer" href="https://youtu.be/7_pzUEFERe8"  target="_blank" rel="noopener noreferrer">
+                    <img src="video_cover2.png" alt="sultans hotel neighborhood" style="object-fit: cover; width: 90%;" >
+                </a>
             </div>
         </section>
 
@@ -154,22 +158,19 @@
         let sabihaDesc = document.querySelector("#sabihaDesc")
         let privateShuttleDesc = document.querySelector("#privateShuttleDesc")
 
-        // let hero = document.querySelector("#hero")
-        let section = document.querySelector("section")
-        setTimeout( ()=>{
-            // hero.src="istanbul2.webp"
-            // hero.style.display = "inline"
-            // hero.style["z-index"] = 0
-            section.style["background-image"] = `url("istanbul2.webp")`
-        }, 5000)
+        //
+        // let section = document.querySelector("section")
+        // setTimeout( ()=>{
+        //     section.style["background-image"] = `url("istanbul2.webp")`
+        // }, 3000)
        
        
        
         istanbulBtn.addEventListener("click", (e)=>{
 
             divContainer.style["background-color"] = "rgba(90, 155, 155,.8)"
-            if(neighborhoodVideoContainer)
-                neighborhoodVideoContainer.style.display = "none"
+            // if(neighborhoodVideoContainer)
+            //     neighborhoodVideoContainer.style.display = "none"
             privateShuttleDesc.style.display = "none";
             sabihaDesc.style.display = "none";
             istanbulDesc.style.display = "block";
@@ -177,8 +178,8 @@
 
         sabihaBtn.addEventListener("click", (e)=>{
             divContainer.style["background-color"] = "rgba(90, 155, 155,.8)"
-            if(neighborhoodVideoContainer)
-                neighborhoodVideoContainer.style.display = "none"
+            // if(neighborhoodVideoContainer)
+            //     neighborhoodVideoContainer.style.display = "none"
             privateShuttleDesc.style.display = "none";
             istanbulDesc.style.display = "none";
             sabihaDesc.style.display = "block";
@@ -186,8 +187,8 @@
 
         privateShuttleBtn.addEventListener("click", (e)=>{
             divContainer.style["background-color"] = "rgba(90, 155, 155,.8)"
-            if(neighborhoodVideoContainer)
-                neighborhoodVideoContainer.style.display = "none"
+            // if(neighborhoodVideoContainer)
+            //     neighborhoodVideoContainer.style.display = "none"
             istanbulDesc.style.display = "none";
             sabihaDesc.style.display = "none";
             privateShuttleDesc.style.display = "block";

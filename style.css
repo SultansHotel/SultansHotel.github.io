@@ -50,7 +50,7 @@ header .item {
     color: white;
     text-shadow: 0 -.05em .05em #335166;
     font-size: 125%;
-    line-height: 1.5;
+    /* line-height: 1.5; */
 }
 
 header .item:first-child {

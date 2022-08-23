@@ -139,7 +139,7 @@
                     <a href="https://youtu.be/7_pzUEFERe8" target="_blank" rel="noopener noreferrer">neighborhood video.</a>
                 </p> -->
                 <a id="imageContainer" href="https://youtu.be/7_pzUEFERe8"  target="_blank" rel="noopener noreferrer">
-                    <img src="video_cover2.png" alt="sultans hotel neighborhood" style="object-fit: cover; width: 70%;" >
+                    <img src="video_cover2.png" alt="sultans hotel neighborhood" style="object-fit: cover; width: 90%;" >
                 </a>
             </div>
         </section>
@@ -160,6 +160,8 @@
         let sabihaDesc = document.querySelector("#sabihaDesc")
         let privateShuttleDesc = document.querySelector("#privateShuttleDesc")
 
+        let section = document.querySelector("section")
+
         //
         // let section = document.querySelector("section")
         // setTimeout( ()=>{
@@ -169,6 +171,7 @@
        
        
         istanbulBtn.addEventListener("click", (e)=>{
+            section.style.height="112%"
 
             divContainer.style["background-color"] = "rgba(90, 155, 155,.8)"
             // if(neighborhoodVideoContainer)
@@ -179,6 +182,8 @@
         })
 
         sabihaBtn.addEventListener("click", (e)=>{
+            section.style.height="112%"
+
             divContainer.style["background-color"] = "rgba(90, 155, 155,.8)"
             // if(neighborhoodVideoContainer)
             //     neighborhoodVideoContainer.style.display = "none"
@@ -188,6 +193,8 @@
         })   
 
         privateShuttleBtn.addEventListener("click", (e)=>{
+            section.style.height="112%"
+            
             divContainer.style["background-color"] = "rgba(90, 155, 155,.8)"
             // if(neighborhoodVideoContainer)
             //     neighborhoodVideoContainer.style.display = "none"

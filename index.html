@@ -4,7 +4,25 @@
   1. At the very beginning, always you are at "master" branch. So start at "master" branch.
      Next: 
       BRANCH OFF TO new "develop" branch ( using "git checkout -b develop" )
-  2.     
+  2. BRANCH OFF TO new feature/ branch ( using "git checkout -b   feature/" )
+  3. MERGE all features TO develop ( using "git checkout develop" and then git merge feature/   )  
+  4. MERGE TO release  ( using "git checkout -b release" and then git merge develop   )
+    Test release on "stage server" while separate features are still worked on 
+    separetely merged to develop. In addition, if there is a bug in release
+    branch, fix it in release branch and then merge release back to master, 
+    develop and all active feature branches   
+  5. MERGE release branch TO master  ( using "git checkout master" and then "git merge release"   )
+       >If there are errors on master branch, then
+        MERGE master TO hotfixes  ( using "git checkout -b  hotfixes"  )                  
+       >MERGE hotfixes TO both master & develop  
+					( using "git checkout master" and then git merge hotfixes   )
+					( using "git checkout develop" and then git merge hotfixes  )
+  6. Add tag from release or hotfix or master branch:
+		$ git tag -a  v1.0  -m "Added first tag"
+		$ git tag
+		   v1.0
+		$ git push --tags origin master
+          
 -->
 
 <html lang="en">
@@ -25,12 +43,12 @@
       <div
         id="istanbulBtn"
         class="item">
-        Istanbul Airport
+        (NEW) Istanbul Airport
       </div>
       <div
         id="sabihaBtn"
         class="item">
-        Sabiha Gokcen Airport
+        (SAW) Sabiha Gokcen Airport
       </div>
       <div
         id="privateShuttleBtn"

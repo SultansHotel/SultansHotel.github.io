@@ -107,7 +107,8 @@ div.container h4 {
   /* padding-top: 1em; */
 }
 
-img#beyazit {
+img#beyazit,
+img.aspect {
   width: 100%;
   object-fit: cover;
 }

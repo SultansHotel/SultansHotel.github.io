@@ -107,6 +107,11 @@ div.container h4 {
   /* padding-top: 1em; */
 }
 
+img#beyazit {
+  width: 100%;
+  object-fit: cover;
+}
+
 #sabihaDesc,
 #privateShuttleDesc {
   display: none;

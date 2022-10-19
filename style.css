@@ -111,6 +111,11 @@ img#beyazit,
 img.aspect {
   width: 100%;
   object-fit: cover;
+  /* aspect-ratio: 3/1; */
+}
+
+.aspect {
+  /* outline: 1px solid red; */
 }
 
 #sabihaDesc,

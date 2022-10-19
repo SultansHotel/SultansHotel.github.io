@@ -74,7 +74,7 @@ section {
 /***************************************/
 div.container {
   /* outline: 5px solid pink; */
-  background-color: rgba(90, 155, 155, 0.8);
+  /* background-color: rgba(90, 155, 155, 0.8); */
 
   width: 90%;
 
@@ -135,6 +135,8 @@ img.aspect {
 #neighborhoodVideo {
   margin: 0 auto 12% auto;
   /* outline: 1px solid red; */
+
+  width: 80%;
 }
 
 #imageContainer {
